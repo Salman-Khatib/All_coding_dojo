@@ -1,0 +1,21 @@
+pwd present working directory
+cd .. revert to the parent directory
+mkdir test make a directory named test
+cd test change directory into test
+touch index.html create a file named index.html
+touch style.css create a file named style.css
+git init initialize the repositry
+git add . add all files in the staging area
+git commit -m "Learning how to commit"
+git add index.html 
+git commit -m "modified html"
+git add style.css 
+git commit -m "modified style"
+git status
+git log 
+git revert -n HEAD
+sudo vim index.html
+esc i , esc :wq
+sudo vim style.css
+esc i , esc :wq
+

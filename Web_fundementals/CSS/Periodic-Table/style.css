@@ -1,0 +1,100 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  /* outline: 2px solid red; */
+}
+#jumbo-container {
+  width: 1150px;
+  height: 620px;
+  background-color: grey;
+  margin: 0px auto;
+}
+#container {
+  width: 1071px;
+
+  background-color: grey;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+  height: 480px;
+  text-align: center;
+}
+.no-color {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+  color: red;
+}
+.blue-box {
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+  margin: 3px;
+}
+.pink-box {
+  background-color: pink;
+  width: 50px;
+  height: 50px;
+  margin: 3px;
+}
+h4 {
+  color: rgb(24, 24, 129);
+}
+p {
+  text-align: center;
+  font-size: 10px;
+  padding: 2px;
+}
+.orange-box {
+  background-color: orange;
+  width: 50px;
+  height: 50px;
+  margin: 3px;
+}
+.container2 {
+  margin-top: 20px;
+}
+.word {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 113px;
+  height: 50px;
+  margin-left: 90px;
+}
+.symbol1 {
+  font-size: 10px;
+  margin-left: 50px;
+}
+.symbol2 {
+  font-size: 10px;
+  margin-left: 55px;
+}
+.big-container2 {
+  height: 50px;
+  display: flex;
+}
+.green-container {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  height: 120px;
+}
+.green-box {
+  background-color: green;
+  width: 50px;
+  height: 50px;
+  margin: 3px;
+}
+.space {
+  margin-right: 10px;
+}

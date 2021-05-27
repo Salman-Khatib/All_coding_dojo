@@ -1,0 +1,43 @@
+#container {
+  background-color: rgb(144 110 110);
+  padding: 15px;
+  margin: 0px auto;
+  min-height: auto;
+  width: fit-content;
+}
+.header {
+  text-align: center;
+}
+.header-img {
+  height: 40px;
+  width: 80px;
+  background-color: white;
+}
+h2 {
+  display: inline-block;
+}
+
+.col1,
+.col2,
+.col3,
+.col4,
+.col5 {
+  display: inline-block;
+}
+.col1 img,
+.col3 img,
+.col5 img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: blue;
+}
+.col2 img,
+.col4 img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: red;
+}

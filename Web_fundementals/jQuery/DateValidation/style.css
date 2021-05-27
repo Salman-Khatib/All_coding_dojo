@@ -1,0 +1,27 @@
+#container {
+  margin: 0px auto;
+  width: 1000px;
+  height: auto;
+  text-align: justify;
+}
+h1 {
+  text-align: center;
+}
+input {
+  margin: 20px auto;
+  display: block;
+}
+.name1 {
+  display: inline-block;
+  margin: 10px;
+  margin-left: 410px;
+}
+
+button {
+  display: block;
+  margin: auto;
+}
+
+span {
+  color: red;
+}

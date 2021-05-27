@@ -1,0 +1,20 @@
+.container {
+  margin: 0px auto;
+  width: 1000px;
+  outline: 2px solid red;
+}
+.upper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+select:invalid {
+  color: gray;
+}
+option {
+  color: black;
+}
+hr {
+  height: 12px;
+  background: black;
+}

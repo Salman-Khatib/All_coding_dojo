@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#container {
+  box-sizing: border-box;
+  margin: 0px auto;
+  width: auto;
+  height: auto;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: {{first_color}};
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: {{second_color}};
+}

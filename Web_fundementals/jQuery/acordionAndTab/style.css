@@ -1,0 +1,10 @@
+hr {
+  height: 2px;
+  background-color: black;
+}
+h1 {
+  text-align: center;
+}
+body {
+  margin: 20px 0px 200px 0px;
+}

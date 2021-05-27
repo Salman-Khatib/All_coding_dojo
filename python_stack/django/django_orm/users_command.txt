@@ -1,0 +1,19 @@
+1- python manage.py makemigrations
+2- python manage.py migrate
+3- python manage.py shell
+4- from users_app.models import User
+5- User.objects.create(first_name="Salman",last_name="Khatib",email_address="something@gmail.com",age="24")
+6- User.objects.create(first_name="mohammad",last_name="dwekat",email_address="something1@gmail.com",age="20")
+7- User.objects.create(first_name="ghaleb",last_name="awada",email_address="something2@gmail.com",age="23")
+8- def __str__(self):
+        return f"<User object: ({self.id}) {self.first_name} , {self.last_name} ,{self.email_address} ,{self.age} >"
+9- User.objects.all()
+10-User.objects.last()
+11-User.object.first()
+12-user_to_update = User.objects.get(id=3)
+user_to_update.last_name = "Pancakes"
+user_to_update.save()
+13- user_to_delete = User.objects.ge(id=2)
+user_to_delete.delete()
+14- User.objects.all().order_by("first_name") for ascending order
+15- User.objects.all().order_by("-first_name") for descending order

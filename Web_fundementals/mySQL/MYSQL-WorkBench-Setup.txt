@@ -1,0 +1,27 @@
+SQL commands : SELECT , INSERT , UPDATE , DELETE 
+
+SELECT :
+
+SELECT * FROM users // This will show me the whole users table
+
+INSERT :
+
+INSERT INTO users (name,email,password,created_at,updated_at)
+VALUES ('Salman','Salman@gmail.com','Top-Secret',NOW(),NOW())
+
+// This will insert these values in the first empty row.
+
+UPDATE:
+
+UPDATE users SET
+name = 'Khalid'
+WHERE id = 1 
+
+// This will change the name of first row (Salman) into khalid.
+
+DELETE :
+
+DELETE FROM users 
+WHERE id = 1 
+
+// This will delete the row with id (1) ,

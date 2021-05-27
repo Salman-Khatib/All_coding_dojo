@@ -1,0 +1,186 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  /* outline: 2px solid red; */
+}
+#container {
+  width: 1020px;
+  min-height: auto;
+  margin: 0px auto;
+}
+#img-header {
+  display: flex;
+  align-items: flex-end;
+  height: 100px;
+}
+#img-header img {
+  width: 100px;
+  position: relative;
+  top: 20px;
+  left: 0px;
+}
+#img-header h1 {
+  margin-left: 0px;
+}
+#img-header h1 span {
+  color: blue;
+}
+.header2 {
+  color: white;
+  height: 50px;
+  background-color: blue;
+  padding: 15px 15px 0px;
+  font-size: 30px;
+}
+.main1 {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(228, 213, 213),
+    rgb(255, 255, 255)
+  );
+  height: 695px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.aside {
+  width: 200px;
+  margin-right: 50px;
+}
+.main1 .aside-top {
+  padding: 10px;
+  height: 210px;
+  margin-top: 20px;
+}
+.aside-top h4 {
+  margin: 10px 5px;
+}
+.aside-top h5 {
+  margin: 10px 5px;
+}
+.aside-top h4 span {
+  color: red;
+}
+.aside-top h5 span {
+  color: blue;
+}
+.aside-top .button1 {
+  color: white;
+  background-color: blue;
+  display: block;
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 5px 0px;
+}
+.aside-top .button2 {
+  color: white;
+  background-color: orange;
+  display: block;
+  width: 180px;
+  height: 40px;
+  margin: 5px 0px;
+  border-radius: 10px;
+}
+.aside-ninja img {
+  width: 100px;
+  margin-left: 50px;
+}
+
+.aside-ninja {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url(images/ad_background.png);
+  width: 200px;
+  color: white;
+  text-align: center;
+  height: 350px;
+}
+.aside-ninja input {
+  width: 150px;
+  margin-left: 25px;
+  margin-bottom: 30px;
+  color: white;
+  background-color: blue;
+  height: 30px;
+  border-radius: 15px;
+}
+.aside-ninja h2 {
+  margin: 20px 5px 0px 5px;
+}
+.main-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: 770px;
+}
+.main-header1 {
+  display: flex;
+  align-items: flex-end;
+}
+.main-header1 img {
+  width: 25px;
+}
+
+.telephone-img {
+  width: 50px;
+  margin-left: 520px;
+  margin-top: 8px;
+}
+.mainest-header {
+  display: flex;
+  flex-direction: column;
+  color: rgb(15, 7, 6);
+  height: 1000px;
+}
+.main2 {
+  padding: 5px;
+}
+.main2 h2 {
+  color: blue;
+}
+.main2 .span01 {
+  color: blue;
+}
+.main2 .span02 {
+  color: black;
+  font-weight: bold;
+}
+.main2 ul li {
+  margin-left: 40px;
+}
+.main3 {
+  background-color: white;
+  width: 300px;
+  margin: 0px 235px;
+}
+.main4 h2 {
+  color: blue;
+}
+.main4 ol li {
+  margin-left: 40px;
+  padding: 5px;
+}
+.main5 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 5px solid blue;
+  border-bottom: 0px;
+  margin-top: 20px;
+}
+.main5 img {
+  width: 100px;
+}
+.main5-left {
+  display: flex;
+  flex-direction: column;
+}
+.main5-left p {
+  padding: 5px;
+}
+.main5-left h2 {
+  color: blue;
+}

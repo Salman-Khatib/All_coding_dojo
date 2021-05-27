@@ -1,0 +1,21 @@
+#container {
+  text-align: center;
+  width: 980px;
+  height: auto;
+  margin: 0px auto;
+}
+
+.paragraph {
+  display: inline-block;
+}
+.button {
+  display: inline-block;
+}
+hr {
+  height: 2px;
+
+  background-color: black;
+}
+.red {
+  color: red;
+}

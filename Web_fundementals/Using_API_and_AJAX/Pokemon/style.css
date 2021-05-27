@@ -1,0 +1,11 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#images {
+  outline: 2px solid black;
+  margin: 0px auto;
+  width: 1200px;
+  text-align: center;
+}

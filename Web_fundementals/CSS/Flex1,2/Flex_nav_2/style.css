@@ -1,0 +1,31 @@
+.nav {
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 90px;
+}
+
+img {
+  width: 70px;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  font-size: 17px;
+  list-style: none;
+}
+h1 {
+  font-size: 20px;
+  color: white;
+  margin-right: 100px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <title>Document</title>
+    <script>
+        
+
+        $(document).ready(function(){
+            $('form').submit(function(){
+                var x = $('.name1').val();
+                var y = $('.date1').val();
+                var z = $('.date2').val();
+                if(x ==''){
+                   $('span').html("<b>Your name can't be empty</b>")
+                   return false;
+                }
+                else{
+                alert(`Thanks ${x} ! your cruise leaves on ${y} and returns on ${z} `)
+                return false;
+                }
+            })
+            $('.date1').datepicker();
+            $('.date2').datepicker();
+           
+            
+        })
+
+
+
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome to coding-dojo plan a cruiser</h1>
+        <form id="form1">
+            <input type="text" name="date" class="date1" placeholder="From: 27/4/2007">
+            <input type="text" name="date" class="date2" value=""  class="date" placeholder="To: ">
+            <input type="text" name="name" class="name1"  placeholder="name:"><span></span>
+            <button type="submit">Check dates</button>
+        </form>
+        
+    </div>
+    
+</body>
+</html>

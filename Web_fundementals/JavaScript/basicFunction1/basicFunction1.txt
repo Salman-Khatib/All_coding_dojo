@@ -1,0 +1,34 @@
+basic Function 1 
+
+I predicted 15 correct answer from 15 problem.
+
+1- prediction:35
+   actual output:35
+2- prediction:8
+   actual output:8
+3- prediction:6
+   actual output:6
+4- prediction:3,9
+   actual output:3,9
+5- prediction:40
+   actual output:40
+6- prediction:4
+   actual output:4
+7- prediction:10,3  , 30
+   actual output:10,3 ,  30
+8- prediction:3,4
+   actual output:3,4
+9- prediction:2,5,8,11
+   actual output:2,5,8,11
+10- prediction:0-9,0-9,0
+   actual output:0-9,0-9,0
+11- prediction:(empty console) nothing will be returned the function hasn't been called.
+   actual output:(empty console) nothing will be returned the function hasn't been called.
+12- prediction:(empty console) nothing will be returned the function hasn't been called.
+   actual output:(empty console) nothing will be returned the function hasn't been called.
+13- prediction:10
+   actual output:10
+14- prediction:15,10
+   actual output:15,10
+15- prediction:15,15
+   actual output:15,15

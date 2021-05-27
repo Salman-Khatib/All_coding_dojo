@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1> All The Users</h1>
+    <table class="table1">
+        <tr>
+            
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+        {% for i in all_users %}
+        <tr> 
+            <td>{{i.first_name}} {{i.last_name}}</td>
+            <td>{{i.email_address}}</td>
+            <td>{{i.age}}</td>
+           
+            
+            
+        </tr>
+        {% endfor %}
+
+    </table>
+    <hr>
+    <h1> Add a User</h1>
+    <table>
+        <form action="/add" method="POST">
+            {% csrf_token %}
+            <tr>
+                <td><label for="first_name">First Name:</label></td>
+                <td><input type="text" id="first_name" name="first"></td>
+                <td><label for="last_name">Last Name:</label></td>
+                <td><input type="text" id="last_name" name="last"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" id="email" name="email"></td>
+                <td><label for="age">Age:</label></td>
+                <td><input type="text" id="age" name="age"></td>    
+            </tr>
+            <tr><td><input type="submit" value="Add"></td></tr>
+        </form>
+        
+            
+        
+    </table>
+</body>
+</html>

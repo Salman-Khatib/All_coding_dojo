@@ -1,0 +1,269 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: inherit;
+  line-height: 17px;
+}
+
+#container {
+  width: 850px;
+  min-height: 700px;
+  margin: 0px auto;
+  background-color: rgba(234, 234, 234, 255);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+.header {
+  height: 30px;
+  background-color: black;
+  margin-left: 8px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.left-header img {
+  vertical-align: middle;
+  height: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.left-header h2 {
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+  font-family: sans-serif;
+  vertical-align: middle;
+  font-weight: lighter;
+}
+.right-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  margin-left: 280px;
+}
+.right-header h6 {
+  margin-left: 10px;
+  font-weight: lighter;
+}
+.main-top {
+  height: 200px;
+  padding: 15px;
+  display: flex;
+}
+
+.left-main-top {
+  width: 300px;
+  background-color: rgba(234, 234, 234, 255);
+  height: 216px;
+  padding-right: 80px;
+}
+.left-main-top p {
+  padding-top: 20px;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+}
+.left-main-top button {
+  text-align: right;
+  margin-left: 200px;
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+  padding: 2px 5px;
+}
+.left-main-top span {
+  color: white;
+  font-size: 8px;
+}
+.right-main-top {
+  display: inline-block;
+  height: 216px;
+}
+.right-main-top img {
+  width: 380px;
+  margin-left: 60px;
+}
+.article {
+  height: 312px;
+  display: flex;
+}
+.article .left-article {
+  width: 540px;
+  height: 250px;
+}
+.left-article-top {
+  width: 170px;
+  vertical-align: top;
+  padding: 10px 5px;
+  display: flex;
+}
+#container p {
+  text-align: left;
+  font-size: 11px;
+  padding: 5px;
+  color: grey;
+}
+
+.left-article-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-article-top p {
+  width: 170px;
+}
+
+.right-article {
+  display: inline-block;
+  width: 225px;
+  height: 230px;
+  color: black;
+}
+.first-column,
+.second-column {
+  margin-left: 8px;
+  border-right: 1px solid grey;
+}
+.left-article-bottom {
+  padding: 5px;
+  text-align: left;
+}
+.left-article-bottom p {
+  padding-top: 10px;
+  width: 520px;
+}
+.right-article {
+  background-color: white;
+  height: 300px;
+  width: 290px;
+  margin-left: 60px;
+  margin-top: 10px;
+  display: flex;
+}
+.aside-right-article {
+  width: 135px;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 10px;
+  line-height: 17px;
+}
+
+.aside-right-article a {
+  color: grey;
+}
+.aside-right-article span {
+  color: black;
+  font-size: 8px;
+}
+.right-article img {
+  height: 185px;
+}
+.footer {
+  background-color: rgba(13, 13, 13, 255);
+  color: white;
+  height: 190px;
+  width: 840px;
+  margin-left: 5px;
+  font-weight: lighter;
+  padding: 10px;
+  width: 824px;
+  display: flex;
+  font-size: 12px;
+}
+
+.first-footer {
+  width: 200px;
+  text-align: left;
+  color: grey;
+}
+.first-footer h3 {
+  padding-bottom: 10px;
+}
+.first-footer ul {
+  list-style-type: none;
+  text-align: left;
+  margin-top: 5px;
+}
+.first-footer ul li {
+  padding: 2px;
+}
+.first-footer p {
+  padding-top: 20px;
+  margin-top: 10px;
+  margin-right: 42px;
+}
+.second-footer {
+  width: 300px;
+  margin-left: 60px;
+  color: grey;
+}
+
+.second-footer ul li {
+  padding: 2px;
+  margin-top: 5px;
+}
+
+.third-footer {
+  width: 300px;
+  margin-left: 10px;
+  color: grey;
+}
+.form {
+  display: flex;
+}
+.third-footer p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.form input {
+  width: 100px;
+  height: 25px;
+  margin-right: 10px;
+  background-color: rgba(38, 38, 38, 255);
+  margin-top: 10px;
+  border: none;
+  padding: 2px;
+}
+
+.phone-no {
+  margin-top: 15px;
+}
+
+.submit {
+  background-image: linear-gradient(to bottom, #171717, #040404);
+  color: grey;
+  font-size: 12px;
+  width: 50px;
+  height: 25px;
+  margin-left: 5px;
+  border: none;
+}
+
+.phone-placeholder {
+  background-color: rgba(38, 38, 38, 255);
+  width: 215px;
+  height: 25px;
+  border: none;
+  padding: 2px;
+}
+.bottom-p {
+  margin-left: 200px;
+  padding: 5px;
+}
+hr {
+  border: none;
+  height: 0.5px;
+  background-color: grey;
+}

@@ -1,0 +1,18 @@
+1- I changed the directories until i reached my environment the place
+where i created py3Env environment, then i called the environment using
+this command call py3Env/scripts/activate Now the environment is activated
+pip list command will show me the installed packages in this environment
+2- Deactivate : this command will exist the environment
+3- pip3 list will show me the packages installed using python3 when the environment
+is deactivated pip list will show me packages priorer to python3 when the environment is active.
+4- call py3Env/scripts/activate command will active the environment
+that i created
+5- pip install django===2.2.4 command will install the django package and it dependencies
+Collecting django , downloading django 2.2.4,requirments already satisfied
+successfully installed django 2.2.4
+6-pip freeze will output the packages but not the packages used for 
+package management : If you want to check a list of packages with various conditions, use pip list .
+ If you want to create requirements. txt , use pip freeze
+7- pip freeze > requirements.txt , more requirements.txt which records an environment's current package list into requirements.txt.
+8- pip uninstall django will remove django packages
+9- pip show django will give me package not found 

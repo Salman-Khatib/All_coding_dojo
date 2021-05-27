@@ -1,0 +1,44 @@
+#container {
+  background-color: rgb(31, 31, 163);
+  width: 970px;
+  padding: 5px;
+}
+.header {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.aside {
+  background-color: turquoise;
+  height: 250px;
+  width: 700px;
+  margin-left: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.main {
+  background-color: rgba(0, 0, 0, 0.473);
+  color: white;
+  border-radius: 40px;
+  margin-left: 15px;
+  margin-right: 10px;
+  padding: 10px;
+}
+.list {
+  list-style-type: circle;
+}
+.footer {
+  background-color: rgb(172, 156, 156);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  color: rgb(228, 216, 216);
+}
+.gg {
+  display: flex;
+  justify-content: space-between;
+}

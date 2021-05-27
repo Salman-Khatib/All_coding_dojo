@@ -1,0 +1,28 @@
+first thing i created a new repo at github
+then i opened gitbash 
+pwd to see where i am
+mkdir basic-repo to create a directory
+touch index.html create index.html file
+touch style.css create style.css file
+vim index.html
+esc,i and write some html content
+esc, :wq to go back to get bash
+vim style.css
+esc,i and write some style content
+esc, :wq to go back to get bash
+cat index.html to see if the changes are made
+cat style.css to see if the changes are made
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin URL of the folder in github
+git push origin master
+vim index.html
+esc,i and change and add some html content
+esc, :wq to go back to get bash
+git add index.html 
+git push origin master 
+open github account and see how your remote repository looks.
+
+
+

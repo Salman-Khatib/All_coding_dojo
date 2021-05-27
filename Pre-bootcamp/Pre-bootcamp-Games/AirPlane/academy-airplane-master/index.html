@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+    *{
+		margin:0;
+		padding:0;
+	}
+	#ocean {
+		background-image:url("AirPlane1.PNG");
+		background-size:contain;
+		background-attachment:fixed;
+		width:900px;	
+		height:700px;
+
+	}
+	.player{
+		position:absolute;
+		background-image:url("airPlanePlayer.PNG");
+		background-size:contain;
+		width:70px;
+		height:75px;
+	}
+	.enemy  {
+		position: absolute;
+		background-image:url("AirPlaneEnemy.PNG");
+		background-size:contain;
+		background-repeat:no-repeat;
+		width:70px;
+		height:75px;
+		
+		
+
+	}
+	</style>
+
+	<div id="ocean">
+		<div id="player"></div>
+		<div id="enemies"></div>
+	</div>
+
+	
+
+
+
+
+
+
+	<script type="text/javascript">
+	
+	var player = {
+		left:450,
+		top:620
+	}
+
+	var enemies = [
+		{left:350,top:200},
+		{left:450,top:250},
+		{left:500,top:300},
+		{left:570,top:300},
+		{left:270,top:300},
+		{left:270,top:150},
+	]
+	function drawPlayer(){
+		content ="<div class='player' style='left:"+player.left+"px;top:"+player.top+"px;'></div>"
+		document.getElementById("player").innerHTML = content;
+	}
+	drawPlayer();
+	
+	function drawEnemies(){
+		content = "";
+		for (var i =0; i < enemies.length; i++){
+			content +="<div class='enemy' style='left:"+enemies[i].left+"px;top:"+enemies[i].top+"px;'></div>"
+		}
+		console.log(content);
+		document.getElementById("enemies").innerHTML = content;
+	}
+	drawEnemies();
+	
+	document.onkeydown = function (e){
+		console.log(e);
+		if(e.keyCode ==37 && player.left >0){
+			player.left -= 10;
+		}
+		if(e.keyCode ==39 && player.left <840){
+			player.left +=10;
+		}
+		if(e.keyCode == 38 && player.top >(2/3 * 700)){
+			player.top -= 10;
+		}
+		if(e.keyCode ==40 && player.top <= 620){
+			player.top +=10;
+		}
+		drawPlayer();
+	}
+
+	</script>
+</body>
+</html>

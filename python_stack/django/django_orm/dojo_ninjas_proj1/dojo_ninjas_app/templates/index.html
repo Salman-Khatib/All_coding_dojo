@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class='container'>
+        <div class="upper">
+            <div class="table">
+                <h1>Add a Dojo</h1>
+                <table>
+                    <form action="/add" method="POST">
+                        {% csrf_token %}
+                        <tr>
+                            <td><label for="name">Name:</label></td>
+                            <td><input type="text" id="name" name="name"></td>   
+                        </tr>
+                        <tr>
+                            <td><label for="city">City:</label></td>
+                            <td><input type="text" id="city" name="city"></td> 
+                        </tr>
+                        <tr>
+                            <td><label for="state">State:</label></td>
+                            <td><input type="text" id="state" name="state"></td> 
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Add"></td>
+                        </tr>
+                    </form>
+                    
+                </table>
+            </div>
+            <div class="table">
+                <h1>Add a Ninja</h1>
+                <table>
+                    <form action="/add_ninja" method="POST">
+                        {% csrf_token %}
+                        <tr>
+                            <td><label for="first_name">First Name:</label></td>
+                            <td><input type="text" id="first_name" name="first_name"></td>   
+                        </tr>
+                        <tr>
+                            <td><label for="last_name">Last Name:</label></td>
+                            <td><input type="text" id="last_name" name="last_name"></td> 
+                        </tr>
+                        <tr>
+                            <td><label>Dojo</label></td>
+                            <td>
+                                <select name = "drop">
+                                    <option value="" disabled selected hidden>-select a dojo-</option>
+                                    {% for i in dojos %} 
+                                    <option>{{i.name}}</option>
+                                    {% endfor %}
+                                    
+                                </select>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Add"></td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <h1>All the Dojos</h1>
+        <ul>
+            {% for i in dojos %}
+                <li> {{ i.name }} 
+                    <ul>
+                        {% for x in i.ninjas.all %}
+                            <li><em>{{ x.first_name }} {{ x.last_name }}</em></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+                
+    </div>  
+    
+</body>
+</html>
